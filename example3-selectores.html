@@ -1,0 +1,54 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+    <center>
+    <p>
+        all paragraphs will disapear when u press btn1
+    </p>
+    <button id="btn1">btn1</button><br>
+    <p id="p2">
+        This paragraph will disapear when u press btn2
+    </p>
+    <button id="btn2">btn2</button><br>
+    <p class="p3">
+        these are
+    </p>
+    <p class="p3">
+        connected pragraphs 
+    </p>
+    <p class="p3">
+        by classes ... 
+    </p>
+    <p class="p3">
+        press btn3 to disapear them 
+    </p>
+    <button id="btn3">btn3</button><br>
+    <button id="btnremover">this btn remove all btns</button><br><br>
+    <input type="text" placeholder="this will disapear when you press btn4" width="150px"><br><br>
+    <button id="btn4">text remover</button>
+    </center>
+</body>
+<script type="text/javascript" src="./base/jquery-3.2.1.min.js"></script>
+<script type="text/javascript">
+   $(function() {
+          $("#btn1").click(function() {
+            $("p").hide();
+          });
+          $("#btn2").click(function() {
+            $("#p2").hide();
+          });
+          $("#btn3").click(function() {
+            $(".p3").hide();
+          }); 
+          $("#btnremover").click(function() {
+            $(":button").hide();
+          }); 
+          $("#btn4").click(function(){
+            $(":text").hide();
+          });                   
+    }); 
+</script>
+</html>
+
