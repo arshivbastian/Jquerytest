@@ -1,0 +1,31 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<style>
+    #messone {
+        display: none;
+    }
+</style>
+<body>
+    <center>
+        <input type="text" placeholder="focus it!">
+        <span id="messone">its focused</span>
+        <span id="messtwo">its blured</span>
+    </center>
+</body>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript">
+   $(function() {
+         $(":text").focus(function() {
+            $("#messone").show();
+            $("#messtwo").hide();
+         });
+         $(":text").blur(function() {
+            $("#messone").hide();
+            $("#messtwo").show();
+         });          
+    }); 
+</script>
+</html>
+

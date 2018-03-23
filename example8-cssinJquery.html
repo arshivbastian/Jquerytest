@@ -1,0 +1,37 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<style>
+    #spdiv{
+        height: 100px;
+        width: 100px;
+        bordre: 5px solid gray;
+        border-radius: 5px;
+        background-color: black;
+    }
+</style>
+<body>
+    <center>
+        <button id="blue">turn it blue</button>
+        <button id="red">turn it red</button>
+        <button id="violet">turn it violet</button><br><br>
+        <div id="spdiv"></div>
+    </center>
+</body>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript">
+   $(function(){
+        $("#blue").click(function(){
+            $("#spdiv").css("background-color", "blue"); 
+        });
+        $("#red").click(function(){
+            $("#spdiv").css("background-color", "red"); 
+        });
+        $("#violet").click(function(){
+            $("#spdiv").css("background-color", "violet"); 
+        });
+    }); 
+</script>
+</html>
+

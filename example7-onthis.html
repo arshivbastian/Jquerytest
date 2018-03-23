@@ -1,0 +1,29 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+    <center>
+        <span>click on buttons to remove them</span>
+        <button>I am btn1</button>
+        <button>I am btn2</button>
+        <button>I am btn3</button>
+        <button>I am btn4</button>
+        <button>I am btn5</button>
+        <button>I am btn6</button>
+        <button>I am btn7</button>
+        <button>I am btn8</button>
+        <button>I am btn9</button>
+        <button>I am btn10</button>
+    </center>
+</body>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript">
+   $(function(){
+        $(":button").on("click",function() {
+           $(this).hide(); 
+        });   
+    }); 
+</script>
+</html>
+
