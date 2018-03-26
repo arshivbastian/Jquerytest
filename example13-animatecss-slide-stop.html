@@ -1,0 +1,40 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style>
+    #movable {
+        width: 500px;
+        height: 500px;
+        border-radius: 10px;
+        background-color:yellowgreen;
+        position: absolute;
+        left: 100px;
+    }
+</style>
+</head>
+
+<body>
+    
+        <div id="movable"></div>
+        <button id="slup">Slide up</button><br><br>
+        <button id="sldn">Slide Down</button><br><br>
+        <button id="btnstop">Stop it</button><br><br>
+
+</body>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript">
+$(function () {
+    $('#slup').click(function () {
+        $("#movable").slideUp("slow");
+    }); 
+    $('#sldn').click(function () {
+        $("#movable").slideDown(20000);
+    }); 
+    $('#btnstop').click(function () {
+        $('#movable').stop();
+    });
+});
+</script>
+</html>
+
