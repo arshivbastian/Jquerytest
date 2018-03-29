@@ -1,0 +1,26 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+
+<body>
+    <center>
+        <p id="changble">I will change if You press the btn</p>
+        <button id="changer">change it!</button>
+    </center>
+
+</body>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript">
+$(function () {
+    $("#changer").click(function(){
+        $("#changble").text("I told U i can change");
+    });
+    $("#changer").click(function(){
+        $("#changer").text("done");
+    });
+});
+</script>
+</html>
+
