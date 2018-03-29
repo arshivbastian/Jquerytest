@@ -1,0 +1,29 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+
+<body>
+    <center>
+       <p>this page is empty</p>
+       <button id="change">change it</button>
+    </center>
+
+</body>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript">
+$(function () {
+    $("#change").click(function(){
+        $("p").text("This page contian s.th");
+        $("#change").text("its changed");
+        var elm1 = "<p>this is a html pragraph<p>";
+        var elm2 = $("<div></div>").text("this is a JQuery div");
+        var elm3 = document.createElement("h1")
+        elm3.innerHTML="this is dom";
+        $("p").append(elm1,elm2,elm3);
+    });
+});
+</script>
+</html>
+

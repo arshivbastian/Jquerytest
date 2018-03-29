@@ -1,0 +1,32 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+
+<body>
+    <center>
+       <p>base pragraph 1</p>
+       <p>base pragraph 2</p>
+       <p>base pragraph 3</p>
+       <button id="addp">add hr</button>
+       <div>base div 1</div>
+       <div>base div 2</div>
+       <div>base div 3</div>
+       <button id="adddiv">add star</button>
+    </center>
+
+</body>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript">
+$(function () {
+    $("#addp").click(function(){
+        $("p").append("<hr>");
+    });
+    $("#adddiv").click(function(){
+        $("div").append("<br>*****</br>");
+    });
+});
+</script>
+</html>
+

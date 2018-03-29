@@ -1,0 +1,42 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<style>
+    .brd {
+        margin-top:20px;
+        border:3px solid black;
+        border-radius: 5px;
+        width: 300px;
+        height: 200px;
+    }
+</style>
+<body>
+    <center>
+       <div id="removediv" class="brd">
+           <p> we are pragraphes + a button in this div </p>
+           <p> this div will disapear if u press the btn </p>
+           <button id="remove">remove us</button>
+       </div>
+       <div id="emptydiv" class="brd">
+        <p> we are pragraphes + a button in this div </p>
+        <p> this dive will be empty </p>
+        <p> that means we will dispaesr  </p>
+        <button id="empty">empty this dive</button>
+    </div>
+    </center>
+</body>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript">
+$(function () {
+    $("#remove").click(function(){
+        $("#removediv").remove();
+    });
+    $("#empty").click(function(){
+        $("#emptydiv").empty();
+    });
+});
+</script>
+</html>
+
