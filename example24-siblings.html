@@ -1,0 +1,53 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<style>
+    .parent {
+        border:3px solid red;
+        height: 400px;
+        width: 500px;
+    }
+    .child {
+        border:3px solid green;
+        height: 300px;
+        width: 200px;
+        float: left;
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+    .selected {
+        background-color: aquamarine;
+    }
+</style>
+<body>
+    <center>
+        <article class="parent">
+            <div class="child">
+                <p>I am pragraph</p>
+                <h5>I am h5 , sibling of pragraph</h5>
+                <span>I am span, sibing of pragraph</span>
+            </div>
+            <span class="child">
+                I am dive sibling
+            </span>
+        </article>
+        <br>
+        <button id="sib">find siblings of pragraph</button>
+        <button id="divsib">find siblings of div</button>
+    </center>
+</body>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript">
+$(function () {
+    $("#sib").click(function(){
+    $("p").siblings().addClass("selected");
+    });
+    $("#divsib").click(function(){
+    $("div").siblings().addClass("selected");
+    });
+});
+</script>
+</html>
+
