@@ -1,0 +1,56 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<style>
+    #brdp {
+        margin-top:20px;
+        border:3px solid violet;
+        border-radius: 5px;
+        width: 300px;
+        height: 300px;
+        margin:20px 0px 0px 20px;
+        background-color: white;
+    }
+    #brdch {
+        margin-top:20px;
+        border:3px solid royalblue;
+        border-radius: 5px;
+        width: 200px;
+        height: 100px;
+        margin:10px 0px 0px 10px;
+        background-color: white;
+    }
+    .selected {
+        background-color: black !important;
+        color: wheat  !important;
+    }
+</style>
+<body>
+    <center>
+            <div id="brdp">
+                I am parent
+                <p id="brdch">
+                    I am child 1
+                </p>
+                <p id="brdch">
+                    I am child 2
+                </p>
+            </div> 
+        </div>
+      </div>
+      <br>
+      <button id="child">find childs of parent</button>
+    </center>
+</body>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript">
+$(function () {
+    $("#child").click(function(){
+    $("#brdp").children().addClass("selected");
+    });
+});
+</script>
+</html>
+
