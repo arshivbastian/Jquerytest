@@ -1,0 +1,44 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<style>
+    .first{
+        color: aqua;
+    }
+    .last{
+        color: tomato;
+    }
+    .middle {
+        color: violet;
+    }
+</style>
+<body>
+    <center>
+        <div>
+            <p>thi is first pragraph</p>
+            <p>thi is 2nd pragraph</p>
+            <p>thi is 3rd pragraph</p>
+            <p>thi is 4th pragraph</p>
+            <p>thi is 5th pragraph</p>
+            <p>thi is 6th pragraph</p>
+            <p>thi is last pragraph</p>
+        </div>
+        <br>
+        <button id="fsls">change first and last and middle</button>
+    </center>
+</body>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript">
+$(function () {
+    $("#fsls").click(function(){
+        $("div p").first().addClass("first");
+        $("div p").last().addClass("last");
+        $("div p").eq(3).addClass("middle");
+        
+    });
+});
+</script>
+</html>
+
